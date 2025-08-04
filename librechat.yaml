@@ -9,29 +9,13 @@ cache: true
  
 # Custom interface configuration
 interface:
-  mcpServers:
-    placeholder: "MCP Servers"
-  privacyPolicy:
-    externalUrl: "https://example.com/privacy"
-    openNewTab: true
-  termsOfService:
-    externalUrl: "https://example.com/terms"
-    openNewTab: true
-    modalAcceptance: true
-    modalTitle: "Terms of Service"
-    modalContent: |
-      # Terms of Service
-      ## Introduction
-      Welcome to LibreChat!
-  modelSelect: true
-  parameters: true
+  parameters: false
   sidePanel: true
-  presets: false
-  prompts: true
-  bookmarks: true
+  prompts: false
+  bookmarks: false
   multiConvo: true
   agents: true
-  customWelcome: "Hey {{user.name}}! Welcome to LibreChat"
+  customWelcome: "Hallo {{user.name}}! Willkommen im Chat"
   runCode: true
   webSearch: true
   fileSearch: true
