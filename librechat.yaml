@@ -23,7 +23,7 @@ interface:
       # Terms of Service
       ## Introduction
       Welcome to LibreChat!
-  modelSelect: false
+  modelSelect: true
   parameters: true
   sidePanel: true
   presets: false
