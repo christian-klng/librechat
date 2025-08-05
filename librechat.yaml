@@ -117,7 +117,7 @@ endpoints:
       dropParams: ['stop', 'user', 'frequency_penalty', 'presence_penalty']
  
     # OpenRouter for OpenAI
-    - name: 'openAI'
+    - name: 'OpenAI'
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
       # recommended environment variables:
       # Known issue: you should not use `OPENROUTER_API_KEY` as it will then override the `openAI` endpoint to use OpenRouter as well.
@@ -130,7 +130,7 @@ endpoints:
       titleModel: 'meta-llama/llama-3-70b-instruct'
       # Recommended: Drop the stop parameter from the request as Openrouter models use a variety of stop tokens.
       dropParams: ['stop']
-      modelDisplayLabel: 'OpenRouter'
+      modelDisplayLabel: 'OpenAI'
  
 # fileConfig:
 #   endpoints:
