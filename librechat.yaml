@@ -25,6 +25,7 @@ registration:
   # socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
   allowedDomains:
   - "Student.HTW-Berlin.de"
+  - "gmail.com"
  
 # rateLimits:
 #   fileUploads:
