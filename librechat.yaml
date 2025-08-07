@@ -65,6 +65,12 @@ endpoints:
     titleMethod: "completion"
     titlePrompt: "Erstelle einen kurzen, präzisen Titel für diese Unterhaltung:\n\n{convo}"
 
+  agents:
+    disableBuilder: false
+    capabilities:
+      - "artifacts"
+      - "web_search"
+
   custom:
 
     - name: "Perplexity"
