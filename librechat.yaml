@@ -22,9 +22,9 @@ interface:
  
 # Example Registration Object Structure (optional)
 registration:
-  socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
-  # allowedDomains:
-  # - "gmail.com"
+  # socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
+  allowedDomains:
+  - "Student.HTW-Berlin.de"
  
 # rateLimits:
 #   fileUploads:
