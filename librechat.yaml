@@ -16,7 +16,7 @@ interface:
   multiConvo: true
   agents: true
   customWelcome: "Hallo {{user.name}}! Willkommen im Chat"
-  runCode: false
+  runCode: true
   webSearch: true
   fileSearch: true
  
