@@ -38,7 +38,24 @@ registration:
 #     ipWindowInMinutes: 60  # Rate limit window for conversation imports per IP
 #     userMax: 50
 #     userWindowInMinutes: 60  # Rate limit window for conversation imports per user
+
+# Web Search
+webSearch:
+  # Search Provider Configuration
+  serperApiKey: "${SERPER_API_KEY}"
+  # searxngInstanceUrl: "${SEARXNG_INSTANCE_URL}"
+  # searxngApiKey: "${SEARXNG_API_KEY}"
+  searchProvider: "serper" # Options: "serper", "searxng"
  
+  # Scraper Configuration
+  firecrawlApiKey: "${FIRECRAWL_API_KEY}"
+  firecrawlApiUrl: "${FIRECRAWL_API_URL}"
+  scraperType: "serper" # Options: "firecrawl", "serper"
+ 
+  # Reranker Configuration
+  jinaApiKey: "${JINA_API_KEY}"
+  rerankerType: "jina" # Options: "jina", "cohere" 
+
 # Definition of custom endpoints
 endpoints:
   # Individual endpoint configurations
