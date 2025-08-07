@@ -108,30 +108,22 @@ endpoints:
         # Fetch option: Set to true to fetch models from API.
         fetch: true # Defaults to false.
  
-      # Optional configurations
- 
-      # Title Conversation setting
       titleConvo: true # Set to true to enable title conversation
  
-      # Title Method: Choose between "completion" or "functions".
       # titleMethod: "completion"  # Defaults to "completion" if omitted.
  
       # Title Model: Specify the model to use for titles.
       titleModel: 'mistral-tiny' # Defaults to "gpt-3.5-turbo" if omitted.
  
-      # Summarize setting: Set to true to enable summarization.
       # summarize: false
  
-      # Summary Model: Specify the model to use if summarization is enabled.
       # summaryModel: "mistral-tiny"  # Defaults to "gpt-3.5-turbo" if omitted.
  
-      # Force Prompt setting: If true, sends a `prompt` parameter instead of `messages`.
       # forcePrompt: false
  
       # The label displayed for the AI model in messages.
       modelDisplayLabel: 'Mistral' # Default is "AI" when not set.
  
-      # Add additional parameters to the request. Default params will be overwritten.
       # addParams:
       # safe_prompt: true # This field is specific to Mistral AI: https://docs.mistral.ai/api/
  
@@ -154,7 +146,35 @@ endpoints:
       # Recommended: Drop the stop parameter from the request as Openrouter models use a variety of stop tokens.
       dropParams: ['stop']
       modelDisplayLabel: 'OpenRouter'
- 
+
+
+speech:
+  stt:
+    openai:
+      apiKey: '${STT_API_KEY}'
+      model: 'whisper-1'
+  tts:
+    openai:
+      apiKey: '${TTS_API_KEY}'
+      model: 'tts-1'
+      voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+  speechTab:
+    conversationMode: true
+    advancedMode: false
+    speechToText:
+      engineSTT: "openai"
+      languageSTT: "Deutsch"
+      autoTranscribeAudio: true
+      decibelValue: -45
+      autoSendText: 0
+    textToSpeech:
+      engineTTS: "openai"
+      voice: "alloy"
+      languageTTS: "de"
+      automaticPlayback: true
+      playbackRate: 1.0
+      cacheTTS: true
+      
 # fileConfig:
 #   endpoints:
 #     assistants:
