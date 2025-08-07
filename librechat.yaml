@@ -49,6 +49,27 @@ endpoints:
     titlePrompt: "Erstelle einen kurzen, präzisen Titel für diese Unterhaltung:\n\n{convo}"
 
   custom:
+
+    - name: "Perplexity"
+      apiKey: "${PERPLEXITY_API_KEY}"
+      baseURL: "https://api.perplexity.ai/"
+      models:
+        default: [
+          "sonar-deep-research",
+          "sonar-reasoning-pro",
+          "sonar-reasoning",
+          "sonar-pro",
+          "sonar",
+          "r1-1776"
+          ]
+        fetch: false # fetching list of models is not supported
+      titleConvo: true
+      titleModel: "gpt-4o-mini"
+      summarize: false
+      summaryModel: "gpt-4o-mini"
+      forcePrompt: false
+      dropParams: ["stop", "frequency_penalty"]
+      modelDisplayLabel: "Perplexity"
  
     # Mistral AI Example
     - name: 'Mistral' # Unique name for the endpoint
