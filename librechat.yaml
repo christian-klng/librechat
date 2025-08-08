@@ -9,7 +9,7 @@ cache: true
  
 # Custom interface configuration
 interface:
-  parameters: false
+  parameters: true
   sidePanel: true
   prompts: false
   bookmarks: false
