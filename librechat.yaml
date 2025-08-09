@@ -70,6 +70,7 @@ endpoints:
     capabilities:
       - "artifacts"
       - "web_search"
+      - "tools"
 
   custom:
 
