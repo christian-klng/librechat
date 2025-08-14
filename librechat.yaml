@@ -155,11 +155,11 @@ speech:
     # openai:
       # apiKey: '${STT_API_KEY}'
       # model: 'whisper-1'
-  tts:
-    openai:
-      apiKey: '${TTS_API_KEY}'
-      model: 'tts-1'
-      voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+  # tts:
+    # openai:
+      # apiKey: '${TTS_API_KEY}'
+      # model: 'tts-1'
+      # voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
   speechTab:
     conversationMode: false
     advancedMode: false
