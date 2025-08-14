@@ -25,6 +25,7 @@ registration:
   # socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
   allowedDomains:
   - "Student.HTW-Berlin.de"
+  - "student.htw-berlin.de"
   - "gmail.com"
  
 # rateLimits:
@@ -150,31 +151,31 @@ endpoints:
 
 
 speech:
-  stt:
-    openai:
-      apiKey: '${STT_API_KEY}'
-      model: 'whisper-1'
+  # stt:
+    # openai:
+      # apiKey: '${STT_API_KEY}'
+      # model: 'whisper-1'
   tts:
     openai:
       apiKey: '${TTS_API_KEY}'
       model: 'tts-1'
       voices: ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
   speechTab:
-    conversationMode: true
+    conversationMode: false
     advancedMode: false
     speechToText:
       engineSTT: "openai"
       languageSTT: "Deutsch"
-      autoTranscribeAudio: true
+      autoTranscribeAudio: false
       decibelValue: -45
       autoSendText: 0
     textToSpeech:
       engineTTS: "openai"
       voice: "alloy"
       languageTTS: "de"
-      automaticPlayback: true
+      automaticPlayback: false
       playbackRate: 1.0
-      cacheTTS: true
+      cacheTTS: false
       
 # fileConfig:
 #   endpoints:
